@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shotcut icon" href="../images/general/favicon.png" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid header">
+                <a class="navbar-brand logo" href="../../index.html">D´Stuardo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse pagesEspace" id="navbarNav">
+                <ul class="navbar-nav pages">
+                    <li class="nav-item">
+                        <a class="nav-link page" href="./about.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page" href="./services.html" aria-current="page">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="nav-link inicio" href="../../index.html">D´Stuardo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page" href="./rrss.html">Redes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page current" href="./contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="portada" id="arriba">
+            <h2>Contactanos</h2>
+            <p>Cotiza con nosotros</p>
+            <p>Escribenos y nuestros asesores te contactarán</p>
+            <a href="" class="wp">Agenda tu hora <img src="../images/index/logo_wp.png" alt="Logo de whatsapp"></a>
+        </div>
+        <section class="Formulario"> 
+            <div class="separador">
+            </div>        
+           <form action="">
+            <label for="nombre" class="preguntas">Nombre y apellido</label>
+            <input type="text" name="nombre" placeholder="Escribe tu Nombre">
+            <label for="telefono" class="preguntas">Teléfono</label>
+            <input type="number" name="telefono" placeholder="Escribe tu Teléfono">
+            <label for="correo" class="preguntas">Correo</label>
+            <input type="email" name="correo" placeholder="Escribe tu electrónico">
+            <label for="servicio" class="preguntas">Servicio deseado (si deseas más de un servicio, déjalo en comentarios adicionales)</label>
+            <select name="servicio">
+                <option value="servicio" selected disabled>Servicio</option>
+                <option value="servicio">Corte de pelo</option>
+                <option value="servicio">Chaquilla o puntas</option>
+                <option value="servicio">Corte regular</option>
+                <option value="servicio">Corte vanguardia</option>
+                <option value="servicio">Iluminación sin decoloración</option>
+                <option value="servicio">Tecnica de iluminación</option>
+                <option value="servicio">Bloque de color</option>
+                <option value="servicio">Color global</option>
+                <option value="servicio">Color fantasía</option>
+                <option value="servicio">LowLights</option>
+                <option value="servicio">Alisado permanente /botox</option>
+                <option value="servicio">Peinado elaborado</option>
+                <option value="servicio">Baño de color</option>
+                <option value="servicio">Plex</option>
+                <option value="servicio">Cobertura de canas</option>
+                <option value="servicio">brushing u ondas</option>
+                <option value="servicio">Tratamiento hidratante</option>
+                <option value="servicio">Perfilado de cejas</option>
+                <option value="servicio">Asesoría maquillaje</option>
+                <option value="servicio">Acomode de barba</option>
+            </select>
+            <div class="opciones">
+                <p>Nos visitas por primera vez??</p>
+                <label for="clienteNuevo"> 
+                <input type="radio" name="clienteNuevo" value="Si">Si
+                </label>
+                <label for="clientenuevo"> 
+                <input type="radio" name="clienteNuevo" value="No">No
+                </label>
+            </div>
+            <div class="opciones">
+                <p>¿Donde realizarás tu corte?</p>
+            <label for="local">
+                <input type="radio" name="local"> Peluquería
+            </label>
+            <label for="local">
+                <input type="radio" name="visita"> Domicilio
+            </label>
+            </div>
+            <label for="domicilio" class="preguntas">Si es a domicilio, deja tu dirección</label>
+            <input type="text" name="domicilio" placeholder="Escribe tu domicilio">
+            <div class="opciones">
+                <p>Donde escuchaste de nosotros</p>
+                <label for="RRSS"> 
+                    <input type="checkbox" name="ig"> Instagram
+                </label>
+                <label for="RRSS"> 
+                    <input type="checkbox" name="recomendación"> Amistad / Familiar
+                </label>
+                <label for="RRSS"> 
+                    <input type="checkbox" name="publicidad"> Publicidad
+                </label>
+                <label for="RRSS"> 
+                    <input type="checkbox" name="cliente"> Cliente antigua/o
+                </label> 
+            </div>
+            <div class="opciones">
+                <label for="foto">Para agilizar la cotización sube una foto de tu pelito actual </label></div>
+                <input type="file" name="foto" class="preguntas">
+                <div class="preguntas">
+                <label for="extra">Comentarios adicionales</label></div>
+                <textarea name="extra" id="" cols="60" rows="2" class="area">Escribe tu mensaje aqui</textarea>
+                <input type="submit" value="Enviar Formulario" name="" id="" class="boton">
+                <input type="reset" value="Limpiar campos" class="boton">
+           </form>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.instagram.com/ale.malditopeluquero/" target="_blank"><img src="../images/general/icono_instagram.png" alt="Logo de instagram"></a>
+        <p>®D´Stuardo HairSalon - Todos los derechos reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,658 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Header*/
+.pages {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar {
+    --bs-navbar-padding-y: unset;
+}
+
+.header {
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    color: white;
+    z-index: 100000000000;
+}
+
+.page {
+    color: white;
+    padding: 26px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.page:hover {
+    background-color: white;
+    color: black;
+}
+
+.current {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.logo {
+    font-family: "Sacramento", sans-serif;
+    color: white;
+    margin-left: 15px;
+    font-size: 40px;
+    font-weight: lighter;
+    transform: rotate(-2deg);
+    display: none;
+}
+
+.inicio {
+    font-family: "Sacramento", sans-serif;
+    color: white;
+    margin-left: 15px;
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+.inicio:hover {
+    background-color: white;
+    color: black;
+}
+
+.logo:hover {
+    background-color: white;
+    color: black;
+}
+
+/* footer */
+footer {
+    height: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div {
+    display: flex;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer img {
+    height: 80%;
+}
+
+/* main general */
+.wp {
+    background-color: black;
+    padding: 20px 0px 20px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+}
+
+.wp img {
+    height: 80;
+}
+
+/* Portada */
+#hero {
+    background-image: url(../images/index/hero.jpeg);
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    padding-top: 70px;
+    padding-left: 20px;
+}
+
+#hero p {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 20px;
+}
+
+/* Servicios */
+#services {
+    display: grid;
+    grid-template-columns: 175px auto;
+    grid-template-rows: 470px auto auto auto;
+    grid-template-areas:
+        "banner banner"
+        "menu cortes"
+        "menu color"
+        "menu tratamientos";
+}
+#menuNavegacion {
+    background-color: black;
+    grid-area: menu;
+}
+.botones {
+    margin-left: 20px;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    padding: 10px;
+}
+.tipos-de-servicio {
+    height: 20px;
+    color: white;
+    text-decoration: none;
+}
+#banner {
+    grid-area: banner;
+}
+.portada {
+    background-image: url(../images/general/portada.png);
+    background-position: center;
+    background-size: cover;
+    height: 470px;
+
+}
+.portada h2 {
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.portada p {
+    color: black;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    padding: 0 20px;
+}
+.portada .disclaimer {
+    font-size: 14px;
+}
+#cortes{
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+#color{
+    background-color: lightpink;
+    padding-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+#tratamientos{
+    background-color: antiquewhite;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+#cortes .cortes{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    width: 500px;
+    height: 170px;
+    margin: 40px 60px 40px 20px;
+    text-align: justify;
+    align-items: center;
+}
+.cortes p{
+    font-size: 14px;
+    margin: 0;
+}
+.cortes h4{
+    font-size: 18px;
+    font-weight:bolder;
+    font-style: italic;
+}
+.cortes img{
+    float: right;
+    height: 200px;
+    width: 180px; 
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+#color .color{
+    color: rgb(116, 4, 65);
+    background-color: #D9FFF8;
+    padding: 10px;
+    width: 500px;
+    height: 170px;
+    margin: 40px 60px 40px 20px;
+    text-align:end;
+    align-items: center;
+}
+.color p{
+    font-size: 14px;
+    margin: 0;
+}
+.color h4{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bolder;
+}
+.color img{
+    float: left;
+    height: 200px;
+    width: 180px; 
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+}
+#tratamientos .tratamientos{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 500px;
+    height: 150px;
+    margin: 40px 60px 40px 20px;
+    text-align:end;
+    align-items: center;
+}
+.tratamientos p{
+    font-size: 14px;
+    margin: 0;
+}
+.tratamientos h4{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bolder;
+}
+.tratamientos img{
+    float: right;
+    height: 200px;
+    width: 150px; 
+    position: relative;
+    bottom: 80px;
+    left: 50px;
+}
+
+/* About */
+#about{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 470px auto;
+    grid-template-areas: 
+    "banner banner"
+    "personal1 personal2";
+}
+#about #banner{
+    grid-area: banner;
+}
+#about .personal1{
+    grid-area: personal1;
+    display: flex;
+    background-color: lightblue;
+    padding-top: 20px;
+}
+.personal1 img{
+    height: 300px;
+    margin: 40px;
+    border-radius: 8px;
+}
+.personal1 p{
+    font-size: 14px;
+    margin-right: 20px;
+}
+.personal1 h3{
+    font-size: 20px;
+    font-weight: bolder;
+}
+#about .personal2{
+    grid-area: personal2;
+    background-color: lightpink;
+}
+.personal2 p{
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* rrss */
+.redes{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+}
+.enlaces{
+    width: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height: max-content;
+}
+.enlaces p{
+    font-size: 14px;
+}
+.fotoPersonal{
+    height: 400px;
+    width: 350px;
+    margin: 40px;
+}
+.ig{
+    height: 100px;
+    background-color: black;
+}
+iframe{
+    height: 350px;
+    margin: 0 30px 50px 30px;
+}
+/* Contact */
+.formulario{
+    color: black;
+    background-image: url(../images/contact/portada.jpg);
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+}
+.separador{
+    width: 100%;
+    margin: 0;
+    height: 25px;
+    background-color: black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.preguntas{
+    background-color: #d9bcda;
+    width: fit-content;
+    margin: 10px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+}
+form p{
+    background-color: #d9bcda;
+    width: fit-content;
+    margin: 10px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 8px;
+}
+.opciones{
+    background-color: #d9bcda;
+    width: fit-content;
+    text-align: justify;
+    margin: 10px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.opciones label{
+    padding: 5px;
+}
+.formulario{
+    color: black;
+    background-image: url(../images/contact/portada.jpg);
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+}
+.separador{
+    width: 100%;
+    margin: 0;
+    height: 25px;
+    background-color: black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.preguntas{
+    background-color: #d9bcda;
+    width: fit-content;
+    margin: 10px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+}
+form p{
+    background-color: #d9bcda;
+    width: fit-content;
+    margin: 10px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 8px;
+}
+.opciones{
+    background-color: #d9bcda;
+    width: fit-content;
+    text-align: justify;
+    margin: 10px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.opciones label{
+    padding: 5px;
+}
+
+/* Media Queries*/
+@media (max-width:991px) {
+    .logo {
+        display: block;
+    }
+    .inicio {
+        display: none;
+    }
+    .wp {
+        font-size: 12px;
+        padding: 10px 0px 10px 10px;
+        border-radius: 10px;
+    }
+    .wp img {
+        height: 40;
+    }
+    footer div {
+        flex-direction: column;
+        align-items: center;
+    }
+    #hero {
+        height: 680px;
+    }
+    #hero h1 {
+        color: white;
+        font-size: 40px;
+        font-weight: 600;
+        padding-top: 100px;
+        padding-left: 20px;
+    }
+    #hero p {
+        color: white;
+        font-size: 14px;
+        font-style: italic;
+    }
+    #services {
+        grid-template-columns: auto;
+        grid-template-rows: 380px auto auto auto;
+        grid-template-areas:
+            "banner"
+            "cortes"
+            "color"
+            "tratamientos";
+    }
+    #menuNavegacion {
+        display: none;
+    }
+    .portada h2 {
+        font-size: 20px;
+    }
+    .portada p {
+        font-size: 12px;
+    }
+    .portada .disclaimer {
+        font-size: 10px;
+    }
+    #cortes .cortes{
+        width: 300px;
+        height: auto;
+        margin: 40px 30px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .cortes p{
+        font-size: 10px;
+        text-align: center;
+    }
+    .cortes h4{
+        font-size: 12px;
+    }
+    .cortes img{
+        height: 130px;
+        width: 120px; 
+        top: unset;
+        left: unset;
+        bottom: 20px;
+    }
+    #color .color{
+        width: 300px;
+        height: auto;
+        margin: 40px 30px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .color p{
+        font-size: 10px;
+        text-align: center;
+    }
+    .color h4{
+        font-size: 14px;
+    }
+    .color img{
+        height: 130px;
+        width: 120px; 
+        bottom: 20px;
+        right: unset;
+    }
+    #tratamientos .tratamientos{
+        width: 300px;
+        height: auto;
+        margin: 40px 30px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tratamientos p{
+        font-size: 10px;
+    }
+    .tratamientos h4{
+        font-size: 14px;
+    }
+    .tratamientos img{
+        height: 130px;
+        width: 120px; 
+        bottom: 20px;
+        left: unset;
+    }
+    #about{
+        grid-template-columns: 1fr;
+        grid-template-rows: 380px auto auto;
+        grid-template-areas: 
+        "banner"
+        "personal1"
+        "personal2";
+    }
+    #about .personal1{
+        grid-area: personal1;
+        flex-direction: column;
+        align-items: center;
+    }
+    .personal1 img{
+        height: 220px;
+        width: 200px;
+    }
+    .personal1 p{
+        margin: 20px;
+        text-align: justify;
+    }
+    .personal1 h3{
+        margin-left: 20px;
+    }
+    .personal2 p{
+        margin: 40px;
+    }
+    .enlaces{
+        width: 100%;
+    }
+    .enlaces p{
+        font-size: 12px;
+        width: 80%;
+        text-align: center;
+    }
+    .fotoPersonal{
+        height: 300px;
+        width: 250px;
+        margin: 20px;
+    }
+    .ig{
+        height: 50px;
+    }
+    iframe{
+        height: 200px;
+        width: 200px;
+        margin: 0 30px 50px 30px;
+    }
+    .preguntas{
+        font-size: 12px;
+    }
+    form p{
+        font-size: 10px;
+    }
+    .opciones{
+        font-size: 10px;
+    }
+    .area{
+        width: 70%;
+    }
+}
