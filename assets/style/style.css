@@ -34,6 +34,7 @@
 .page:hover {
     background-color: white;
     color: black;
+    transition: all 0.5s ease;
 }
 
 .current {
@@ -89,7 +90,7 @@ footer p {
 }
 
 footer img {
-    height: 80%;
+    height: 80px;
 }
 
 /* main general */
@@ -195,14 +196,15 @@ footer img {
     padding-bottom: 40px;
 }
 #color{
-    background-color: lightpink;
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 8%, rgba(235,171,201,1) 55%, rgba(252,248,242,1) 91%);
     padding-top: 40px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
 #tratamientos{
-    background-color: antiquewhite;
+    background-color: #fcf2fa;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
