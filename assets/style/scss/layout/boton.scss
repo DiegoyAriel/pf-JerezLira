@@ -1,0 +1,26 @@
+.wp {
+    background-color: black;
+    padding: 20px 0px 20px 20px;
+    border-radius: 10px;
+    font-size: $desktop-texto;
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    img{
+        height: 80px;
+        }
+    @include mediaQueryTablet{
+            font-size: $tablet-texto;
+            padding: 15px 0px 10px 15px;
+            img {
+                height: 60;
+            }
+         }
+    @include mediaQueryMobile{
+        font-size: $mobile-texto;
+        padding: 10px 0px 10px 10px;
+        img {
+            height: 40;
+         }
+    }
+}

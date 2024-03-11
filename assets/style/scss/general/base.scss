@@ -1,0 +1,29 @@
+// Colores //
+$color-primario: black;
+$color-secundario: white;
+$color-terciario: #ebabc9;
+$color-cuarto: #add8e6;
+$color-quinto: #740441;
+
+// tamaños de letra//
+$desktop-titulo: 70px;
+$desktop-subtitulo: 20px;
+$desktop-texto:16px;
+$tablet-titulo:50px;
+$tablet-subtitulo:18px;
+$tablet-texto:14px;
+$mobile-titulo: 40px;
+$mobile-subtitulo: 14px;
+$mobile-texto:12px;
+
+//mixins//
+@mixin mediaQueryMobile{
+    @media (max-width: 492px){
+        @content;
+    }
+}
+@mixin mediaQueryTablet{
+    @media (max-width:991px){
+        @content;    
+    }
+}

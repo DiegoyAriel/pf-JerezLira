@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/general/reset.scss","../scss/layout/boton.scss","../scss/general/base.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;ACHJ;EACI;EACA;EACA;EACA,WCMW;EDLX;EACA;EACA;;AACA;EACI;;ACgBJ;EDzBJ;IAYY,WCCE;IDAF;;EACA;IACI;;;ACKZ;EDpBJ;IAmBQ,WCHM;IDIN;;EACA;IACI","file":"main.css"}

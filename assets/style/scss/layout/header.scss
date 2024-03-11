@@ -6,19 +6,17 @@
 .navbar {
     --bs-navbar-padding-y: unset;
     .header {
-        background-color: black;
+        background-color: $color-primario;
         opacity: 0.8;
         position: fixed;
         top: 0;
-        color: white;
+        color: $color-secundario;
         z-index: 100000000000;
     }
 }
 
-
-
 .page {
-    color: white;
+    color: $color-secundario;
     padding: 26px;
     text-decoration: none;
     font-weight: lighter;
