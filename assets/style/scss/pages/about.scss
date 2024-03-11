@@ -81,28 +81,43 @@
         }
 
 }
-.portada{
+#banner{
     background-image: url(../../images/general/portada.png);
     background-position: center;
+    grid-area: banner;
     background-size: cover;
-    height: 470px;
+    height: auto;
     padding: 100px 20px 20px 20px;
-    .h1 {
+    h1 {
         color: $color-secundario;
         font-size: $desktop-titulo;
         font-weight: bolder;
+        @include mediaQueryTablet{
+            font-size: $tablet-titulo;
+        }
+        @include mediaQueryMobile{
+            font-size: $mobile-titulo;
+        }
     }
-    .p{
+    p{
         color: $color-primario;
         font-size: $desktop-subtitulo;
-        font-style: italic;
         font-weight: 500;
         padding: 0 20px;
+        @include mediaQueryTablet{
+            font-size: $tablet-subtitulo;
+        }
+        @include mediaQueryMobile{
+            font-size: $mobile-subtitulo;
+        }
     }
-    @include mediaQueryTablet{
-        height: 400px;
-    }
-    @include mediaQueryMobile{
-        height: 350px;
+    .disclaimer {
+        font-size: $desktop-texto;
+        @include mediaQueryTablet{
+            font-size: $tablet-texto
+        }
+        @include mediaQueryMobile{
+            font-size: $mobile-texto;
+        }
     }
 }

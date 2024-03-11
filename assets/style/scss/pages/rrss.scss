@@ -1,0 +1,59 @@
+.redes{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: $color-terciario;
+    justify-content: space-evenly;
+    .enlaces{
+        width: 50%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        height: max-content;
+        p{
+            font-size: $desktop-texto;
+            margin: 20px 40px;
+            @include mediaQueryTablet{
+                font-size: $tablet-texto;
+                text-align: center;
+            }
+            @include mediaQueryMobile{
+                font-size: $mobile-texto;
+            }
+        }
+        .fotoPersonal{
+            height: 400px;
+            width: 350px;
+            margin: 40px;
+            @include mediaQueryTablet{
+                height: 300px;
+                width: 250px;
+                margin: 20px;
+            }
+            @include mediaQueryMobile{
+                height: 250px;
+                width: 200px;
+                 margin: 20px;
+            }
+        }
+        .ig{
+            height: 100px;
+            background-color: $color-primario;
+            @include mediaQueryTablet{
+                height: 60px;
+            }
+        }
+        @include mediaQueryTablet{
+            width: 100%;
+        }
+    }
+    iframe{
+        height: 350px;
+        margin: 0 30px 50px 30px;
+    @include mediaQueryTablet{
+        height: 200px;
+        width: 400px;
+        margin: 0 30px 50px 30px;
+    }
+    }
+}

@@ -1,0 +1,221 @@
+#services {
+    display: grid;
+    grid-template-columns: 175px auto;
+    grid-template-rows: 500px auto auto auto;
+    grid-template-areas:
+        "banner banner"
+        "menu cortes"
+        "menu color"
+        "menu tratamientos";
+    @include mediaQueryTablet{
+            grid-template-columns: auto;
+            grid-template-rows: 500px auto auto auto;
+            grid-template-areas:
+                "banner"
+                "cortes"
+                "color"
+                "tratamientos";
+    }
+    #menuNavegacion {
+            background-color: $color-primario;
+            grid-area: menu;
+            .botones {
+                margin-left: 20px;
+                flex-direction: column;
+                list-style-type: none;
+                align-items: center;
+                background-color: $color-primario;
+                position: fixed;
+                padding: 10px;
+            }
+            @include mediaQueryTablet{
+                display: none;}
+            .tipos-de-servicio {
+                height: 20px;
+                color: $color-secundario;
+                text-decoration: none;
+                }
+            }
+    #cortes{
+        background-color: $color-primario;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding-bottom: 40px;
+        .cortes{
+            color: $color-primario;
+            background-color: $color-secundario;
+            padding: 10px;
+            width: 500px;
+            height: 170px;
+            margin: 40px 60px 40px 20px;
+            text-align: justify;
+            align-items: center;
+            @include mediaQueryTablet{
+                width: 300px;
+                height: auto;
+                margin: 40px 30px 20px 20px;
+                display: flex;
+                flex-direction: column;
+            }
+            p{
+                font-size: $desktop-texto;
+                margin: 0;
+                @include mediaQueryTablet{
+                    font-size: $tablet-texto;
+                }
+                @include mediaQueryMobile{
+                    font-size: $mobile-texto;
+                }
+            }
+            h2{
+                font-size: $desktop-subtitulo;
+                font-weight:bolder;
+                font-style: italic;
+                @include mediaQueryTablet{
+                    font-size: $tablet-subtitulo;
+                }
+                @include mediaQueryMobile{
+                    font-size: $mobile-subtitulo;
+                }
+            }
+            img{
+                float: right;
+                height: 200px;
+                width: 180px; 
+                position: relative;
+                top: 10px;
+                left: 50px;
+                @include mediaQueryTablet{
+                    height: 130px;
+                    width: 120px; 
+                    top: unset;
+                    left: unset;
+                    bottom: 20px;
+                }
+            }
+        }         
+    }
+    #color{
+        background: $color-primario;
+        background: linear-gradient(180deg, rgba(0,0,0,1) 8%, #ebabc9 55%, #fcf8f2 91%);
+        padding-top: 40px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        .color{
+            color: $color-quinto;
+            background-color: $color-terciario;
+            padding: 10px;
+            width: 500px;
+            height: 170px;
+            margin: 40px 60px 40px 20px;
+            text-align:end;
+            align-items: center;
+            @include mediaQueryTablet{
+                width: 300px;
+                height: auto;
+                margin: 40px 30px 20px 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            p{
+                font-size: $desktop-texto;
+                margin: 0;
+                @include mediaQueryTablet{
+                    font-size: $tablet-texto;
+                }
+                @include mediaQueryMobile{
+                    font-size: $mobile-texto;
+                }
+            }
+            h2{
+                font-size: $desktop-subtitulo;
+                font-style: italic;
+                font-weight: bolder;
+                @include mediaQueryTablet{
+                    font-size: $tablet-subtitulo;
+                }
+                @include mediaQueryMobile{
+                    font-size: $mobile-subtitulo;
+                }
+            }
+            img{
+                float: left;
+                height: 200px;
+                width: 180px; 
+                position: relative;
+                bottom: 70px;
+                right: 20px;
+                @include mediaQueryTablet{
+                    height: 130px;
+                    width: 120px; 
+                    top: unset;
+                    right: unset;
+                    bottom: 20px;
+                }
+            }
+        }
+    }
+    #tratamientos{
+        background-color: $color-sexto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding-top: 50px;
+        .tratamientos{
+            color: $color-secundario;
+            background-color: $color-primario;
+            padding: 10px;
+            width: 500px;
+            height: 180px;
+            margin: 40px 60px 40px 20px;
+            text-align:end;
+            align-items: center;
+            @include mediaQueryTablet{
+                width: 300px;
+                height: auto;
+                margin: 40px 30px 20px 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            p{
+                font-size: $desktop-texto;
+                margin: 0;
+                @include mediaQueryTablet{
+                    font-size: $tablet-texto;
+                }
+                @include mediaQueryMobile{
+                    font-size: $mobile-texto;
+                }
+            }
+            h2{
+                font-size: $desktop-subtitulo;
+                font-style: italic;
+                font-weight: bolder;
+                @include mediaQueryTablet{
+                    font-size: $tablet-subtitulo;
+                }
+                @include mediaQueryMobile{
+                    font-size: $mobile-subtitulo;
+                }
+            }
+            img{
+                float: right;
+                height: 200px;
+                width: 150px; 
+                position: relative;
+                bottom: 60px;
+                left: 50px;
+                @include mediaQueryTablet{
+                    height: 130px;
+                    width: 120px; 
+                    left: unset;
+                    bottom: 20px;
+                }
+            }
+        }
+    }
+}
