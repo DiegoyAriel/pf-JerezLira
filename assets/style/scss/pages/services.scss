@@ -63,6 +63,7 @@
                 margin: 0;
                 @include mediaQueryTablet{
                     font-size: $tablet-texto;
+                    text-align: center;
                 }
                 @include mediaQueryMobile{
                     font-size: $mobile-texto;
@@ -74,6 +75,7 @@
                 font-style: italic;
                 @include mediaQueryTablet{
                     font-size: $tablet-subtitulo;
+                    text-align: center;
                 }
                 @include mediaQueryMobile{
                     font-size: $mobile-subtitulo;
@@ -125,6 +127,7 @@
                 margin: 0;
                 @include mediaQueryTablet{
                     font-size: $tablet-texto;
+                    text-align: center;
                 }
                 @include mediaQueryMobile{
                     font-size: $mobile-texto;
@@ -136,6 +139,7 @@
                 font-weight: bolder;
                 @include mediaQueryTablet{
                     font-size: $tablet-subtitulo;
+                    text-align: center;
                 }
                 @include mediaQueryMobile{
                     font-size: $mobile-subtitulo;
@@ -186,6 +190,7 @@
                 margin: 0;
                 @include mediaQueryTablet{
                     font-size: $tablet-texto;
+                    text-align: center;
                 }
                 @include mediaQueryMobile{
                     font-size: $mobile-texto;
@@ -197,6 +202,7 @@
                 font-weight: bolder;
                 @include mediaQueryTablet{
                     font-size: $tablet-subtitulo;
+                    text-align: center;
                 }
                 @include mediaQueryMobile{
                     font-size: $mobile-subtitulo;

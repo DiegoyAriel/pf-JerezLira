@@ -282,7 +282,7 @@ footer img {
   background-position: center;
   grid-area: banner;
   background-size: cover;
-  height: 470px;
+  height: auto;
   padding: 100px 20px 20px 20px;
 }
 #banner h1 {
@@ -314,16 +314,6 @@ footer img {
 @media (max-width: 492px) {
   #banner p {
     font-size: 14px;
-  }
-}
-@media (max-width: 991px) {
-  #banner {
-    height: 400px;
-  }
-}
-@media (max-width: 492px) {
-  #banner {
-    height: 450px;
   }
 }
 #banner .disclaimer {
@@ -505,13 +495,13 @@ form p {
 #services {
   display: grid;
   grid-template-columns: 175px auto;
-  grid-template-rows: 470px auto auto auto;
+  grid-template-rows: 500px auto auto auto;
   grid-template-areas: "banner banner" "menu cortes" "menu color" "menu tratamientos";
 }
 @media (max-width: 991px) {
   #services {
     grid-template-columns: auto;
-    grid-template-rows: 470px auto auto auto;
+    grid-template-rows: 500px auto auto auto;
     grid-template-areas: "banner" "cortes" "color" "tratamientos";
   }
 }
@@ -571,6 +561,7 @@ form p {
 @media (max-width: 991px) {
   #services #cortes .cortes p {
     font-size: 16px;
+    text-align: center;
   }
 }
 @media (max-width: 492px) {
@@ -586,6 +577,7 @@ form p {
 @media (max-width: 991px) {
   #services #cortes .cortes h2 {
     font-size: 18px;
+    text-align: center;
   }
 }
 @media (max-width: 492px) {
@@ -645,6 +637,7 @@ form p {
 @media (max-width: 991px) {
   #services #color .color p {
     font-size: 16px;
+    text-align: center;
   }
 }
 @media (max-width: 492px) {
@@ -660,6 +653,7 @@ form p {
 @media (max-width: 991px) {
   #services #color .color h2 {
     font-size: 18px;
+    text-align: center;
   }
 }
 @media (max-width: 492px) {
@@ -718,6 +712,7 @@ form p {
 @media (max-width: 991px) {
   #services #tratamientos .tratamientos p {
     font-size: 16px;
+    text-align: center;
   }
 }
 @media (max-width: 492px) {
@@ -733,6 +728,7 @@ form p {
 @media (max-width: 991px) {
   #services #tratamientos .tratamientos h2 {
     font-size: 18px;
+    text-align: center;
   }
 }
 @media (max-width: 492px) {
