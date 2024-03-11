@@ -1,0 +1,40 @@
+#hero {
+    background-image: url(../../../images/index/hero.jpeg);
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    @include mediaQueryTablet{
+        height: 700px;
+    }
+    @include mediaQueryMobile{
+        height: 680px;
+    }
+    h1 {
+        color: $color-secundario;
+        font-size: $desktop-titulo;
+        font-weight: 600;
+        padding-top: 70px;
+        padding-left: 20px;
+        @include mediaQueryTablet{
+            font-size: $mobile-titulo;
+        }
+        @include mediaQueryMobile{
+            font-size: $mobile-titulo;
+            padding-top: 100px;
+        }
+    }
+    p {
+        color: $color-secundario;
+        font-size: $desktop-subtitulo;
+        font-style: italic;
+        padding-left: 20px;
+        @include mediaQueryTablet{
+            font-size: $tablet-subtitulo;
+       }
+        @include mediaQueryMobile{
+            font-size: $mobile-subtitulo;
+         }
+         
+    }
+}

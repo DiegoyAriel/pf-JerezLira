@@ -35,4 +35,143 @@
   }
 }
 
+.navbar {
+  --bs-navbar-padding-y: unset;
+}
+.navbar .header {
+  background-color: black;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+}
+.navbar .header .logo {
+  color: white;
+  display: none;
+  font-family: "Sacramento", sans-serif;
+  margin-left: 15px;
+  font-size: 40px;
+}
+@media (max-width: 991px) {
+  .navbar .header .logo {
+    display: block;
+  }
+}
+.navbar .header .logo:hover {
+  background-color: white;
+  color: black;
+}
+.navbar .header .pages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.navbar .header .pages .page {
+  color: white;
+  font-size: 20px;
+  padding: 26px;
+}
+.navbar .header .pages .page:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5 ease;
+}
+.navbar .header .pages .inicio {
+  color: white;
+  font-size: 40px;
+  font-family: "Sacramento", sans-serif;
+  padding: 12px;
+}
+.navbar .header .pages .inicio:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5 ease;
+}
+@media (max-width: 991px) {
+  .navbar .header .pages .inicio {
+    display: none;
+  }
+}
+.navbar .header .pages .current {
+  font-weight: bolder;
+}
+
+footer {
+  height: 70px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer div {
+  display: flex;
+}
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+footer img {
+  height: 80px;
+}
+@media (max-width: 991px) {
+  footer div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#hero {
+  background-image: url(../../../images/index/hero.jpeg);
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 991px) {
+  #hero {
+    height: 700px;
+  }
+}
+@media (max-width: 492px) {
+  #hero {
+    height: 680px;
+  }
+}
+#hero h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 600;
+  padding-top: 70px;
+  padding-left: 20px;
+}
+@media (max-width: 991px) {
+  #hero h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 492px) {
+  #hero h1 {
+    font-size: 40px;
+    padding-top: 100px;
+  }
+}
+#hero p {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  padding-left: 20px;
+}
+@media (max-width: 991px) {
+  #hero p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 492px) {
+  #hero p {
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

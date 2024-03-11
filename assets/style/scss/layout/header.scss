@@ -1,62 +1,60 @@
-.pages {
-    justify-content: space-around;
-    width: 100%;
-}
-
-.navbar {
+.navbar{
     --bs-navbar-padding-y: unset;
-    .header {
+    .header{
         background-color: $color-primario;
         opacity: 0.8;
         position: fixed;
+        z-index: 100000;
         top: 0;
-        color: $color-secundario;
-        z-index: 100000000000;
+    .logo{
+        color:$color-secundario;
+        display: none;
+        font-family: "Sacramento", sans-serif;
+        margin-left: 15px;
+        font-size: 40px;
+        @include mediaQueryTablet{
+            display: block;
+        }
+        &:hover{
+            background-color: $color-secundario;
+            color: $color-primario;
+        }
+
+    }
+    .pages{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+      .page{
+            color: $color-secundario;
+            font-size: 20px;
+            padding: 26px;
+            &:hover{
+                background-color: $color-secundario;
+                color: $color-primario;
+                transition: all 0.5 ease;
+            }
+        }
+        .inicio{
+            color: $color-secundario;
+            font-size: 40px;
+            font-family: "Sacramento", sans-serif;
+            padding: 12px;
+            &:hover{
+                background-color: $color-secundario;
+                color: $color-primario;
+                transition: all 0.5 ease;
+            }
+            @include mediaQueryTablet{
+                display:none;
+            }
+        }
+        .current{
+            font-weight: bolder;
+        }
     }
 }
-
-.page {
-    color: $color-secundario;
-    padding: 26px;
-    text-decoration: none;
-    font-weight: lighter;
 }
 
-.page:hover {
-    background-color: white;
-    color: black;
-    transition: all 0.5s ease;
-}
 
-.current {
-    font-weight: bolder;
-    font-size: 18px;
-}
-
-.logo {
-    font-family: "Sacramento", sans-serif;
-    color: white;
-    margin-left: 15px;
-    font-size: 40px;
-    font-weight: lighter;
-    transform: rotate(-2deg);
-    display: none;
-}
-
-.inicio {
-    font-family: "Sacramento", sans-serif;
-    color: white;
-    margin-left: 15px;
-    font-weight: lighter;
-    font-size: 40px;
-}
-
-.inicio:hover {
-    background-color: white;
-    color: black;
-}
-
-.logo:hover {
-    background-color: white;
-    color: black;
-}

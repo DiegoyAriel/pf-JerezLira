@@ -1,0 +1,24 @@
+footer {
+    height: 70px;
+    background-color: $color-primario;
+    color: $color-secundario;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div {
+        display: flex;
+    }
+    p {
+        margin: 0;
+        font-size: 14px;
+    }
+    img {
+        height: 80px;
+    }
+    @include mediaQueryTablet {
+        div {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
