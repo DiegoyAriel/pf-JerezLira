@@ -8,17 +8,20 @@
     margin-left: 40px;
     img{
         height: 80px;
+        @include mediaQueryMobile{
+            height: 50px;
+        }
         }
     @include mediaQueryTablet{
             font-size: $tablet-texto;
-            padding: 15px 0px 10px 15px;
+            padding: 15px 0px 15px 15px;
             img {
                 height: 60;
             }
          }
     @include mediaQueryMobile{
         font-size: $mobile-texto;
-        padding: 10px 0px 10px 10px;
+        padding: 12px 0px 12px 12px;
         img {
             height: 40;
          }

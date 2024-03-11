@@ -1,0 +1,79 @@
+
+.formulario{
+    color: black;
+    background-image: url(../../images/contact/portada.jpg);
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    .separador{
+        width: 100%;
+        margin: 0;
+        height: 25px;
+        background-color: $color-primario;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    .preguntas{
+        background-color: $color-terciario;
+        width: fit-content;
+        margin: 10px;
+        font-size: $desktop-texto;
+        padding: 5px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        @include mediaQueryTablet{
+            font-size: $mobile-texto;
+        }
+    }
+    p{
+        background-color: $color-terciario;
+        width: fit-content;
+        margin: 10px;
+        font-size: $desktop-texto;
+        padding: 5px;
+        border-radius: 8px;
+        @include mediaQueryTablet{
+            font-size: $mobile-texto;
+        }
+    }
+    .opciones{
+        background-color: $color-terciario;
+        width: fit-content;
+        text-align: justify;
+        margin: 10px;
+        font-size: $desktop-texto;
+        padding: 5px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        @include mediaQueryTablet{
+            font-size: $mobile-texto;
+        }
+    }
+    label{
+        padding: 5px;
+    }
+}
+
+.preguntas{
+    font-size: 12px;
+}
+form p{
+    font-size: 10px;
+}
+.opciones{
+    font-size: 10px;
+}
+.area{
+    width: 70%;
+}

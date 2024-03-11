@@ -1,11 +1,11 @@
 #hero {
-    background-image: url(../../../images/index/hero.jpeg);
+    background-image: url(../../images/index/hero.jpeg);
     height: 800px;
     width: 100%;
     background-size: cover;
     background-position: center;
     @include mediaQueryTablet{
-        height: 700px;
+        height: 950px;
     }
     @include mediaQueryMobile{
         height: 680px;
@@ -14,7 +14,7 @@
         color: $color-secundario;
         font-size: $desktop-titulo;
         font-weight: 600;
-        padding-top: 70px;
+        padding-top: 100px;
         padding-left: 20px;
         @include mediaQueryTablet{
             font-size: $mobile-titulo;

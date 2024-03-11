@@ -1,0 +1,108 @@
+
+#about{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 470px auto;
+    grid-template-areas: 
+    "banner banner"
+    "personal1 personal2";
+    #banner{
+        grid-area: banner;
+    }
+    .personal1{
+        grid-area: personal1;
+        display: flex;
+        background: $color-cuarto;
+        padding-top: 20px;
+        img{
+            height: 300px;
+            margin: 40px;
+            border-radius: 8px;
+            @include mediaQueryTablet{
+                height: 250px;
+                width: 230px;
+            }
+            @include mediaQueryMobile{
+                height: 220px;
+                width: 200px;
+            }
+        }
+        p{
+            font-size: $desktop-texto;
+            margin-right: 20px;
+            @include mediaQueryTablet{
+                font-size: $tablet-texto;
+                margin: 20px;
+                text-align: justify;
+            }
+            @include mediaQueryMobile{
+                font-size: $mobile-texto;
+            }
+        }
+        h2{
+            font-size: $desktop-subtitulo;
+            font-weight: bolder;
+            @include mediaQueryTablet{
+                margin-left: 20px;
+                font-size: $tablet-subtitulo;
+            }
+            @include mediaQueryMobile{
+                font-size: $mobile-subtitulo;
+            }
+        }
+        @include mediaQueryMobile{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .personal2{
+        grid-area: personal2;
+        background-color: $color-terciario;
+        p{
+            text-align: center;
+            margin-top: 40px;
+            font-size: $desktop-texto;
+            @include mediaQueryTablet{
+                margin: 20px;
+                font-size: $tablet-texto;
+            }
+            @include mediaQueryMobile{
+                font-size: $mobile-texto;
+            }
+        }
+    }
+    @include mediaQueryTablet{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+            "banner"
+            "personal1"
+            "personal2";
+        }
+
+}
+.portada{
+    background-image: url(../../images/general/portada.png);
+    background-position: center;
+    background-size: cover;
+    height: 470px;
+    padding: 100px 20px 20px 20px;
+    .h1 {
+        color: $color-secundario;
+        font-size: $desktop-titulo;
+        font-weight: bolder;
+    }
+    .p{
+        color: $color-primario;
+        font-size: $desktop-subtitulo;
+        font-style: italic;
+        font-weight: 500;
+        padding: 0 20px;
+    }
+    @include mediaQueryTablet{
+        height: 400px;
+    }
+    @include mediaQueryMobile{
+        height: 350px;
+    }
+}
