@@ -1,3 +1,11 @@
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -151,6 +159,9 @@ footer img {
   font-weight: 600;
   padding-top: 100px;
   padding-left: 20px;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
 }
 @media (max-width: 991px) {
   #hero h1 {
@@ -289,6 +300,9 @@ footer img {
   color: white;
   font-size: 70px;
   font-weight: bolder;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
 }
 @media (max-width: 991px) {
   #banner h1 {
@@ -514,8 +528,9 @@ form p {
   flex-direction: column;
   list-style-type: none;
   align-items: center;
-  background-color: black;
+  background: linear-gradient(208deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
   position: fixed;
+  bottom: 2px;
   padding: 10px;
 }
 @media (max-width: 991px) {
@@ -544,6 +559,10 @@ form p {
   margin: 40px 60px 40px 20px;
   text-align: justify;
   align-items: center;
+}
+#services #cortes .cortes:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 1s ease;
 }
 @media (max-width: 991px) {
   #services #cortes .cortes {
@@ -620,6 +639,10 @@ form p {
   text-align: end;
   align-items: center;
 }
+#services #color .color:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 1s ease;
+}
 @media (max-width: 991px) {
   #services #color .color {
     width: 300px;
@@ -694,6 +717,10 @@ form p {
   margin: 40px 60px 40px 20px;
   text-align: end;
   align-items: center;
+}
+#services #tratamientos .tratamientos:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 1s ease;
 }
 @media (max-width: 991px) {
   #services #tratamientos .tratamientos {

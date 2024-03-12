@@ -28,3 +28,22 @@ $mobile-texto:12px;
         @content;    
     }
 }
+
+//animaciones //
+@mixin aparecer{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@mixin seleccionar{
+    transform: scale(1.2,1.2);
+    transition: all 1s ease;
+}

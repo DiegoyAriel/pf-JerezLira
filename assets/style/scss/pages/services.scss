@@ -24,8 +24,9 @@
                 flex-direction: column;
                 list-style-type: none;
                 align-items: center;
-                background-color: $color-primario;
+                background: linear-gradient(208deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%);
                 position: fixed;
+                bottom: 2px;
                 padding: 10px;
             }
             @include mediaQueryTablet{
@@ -51,6 +52,9 @@
             margin: 40px 60px 40px 20px;
             text-align: justify;
             align-items: center;
+            &:hover{
+                @include seleccionar
+            }
             @include mediaQueryTablet{
                 width: 300px;
                 height: auto;
@@ -114,6 +118,9 @@
             margin: 40px 60px 40px 20px;
             text-align:end;
             align-items: center;
+            &:hover{
+                @include seleccionar
+            }
             @include mediaQueryTablet{
                 width: 300px;
                 height: auto;
@@ -177,6 +184,9 @@
             margin: 40px 60px 40px 20px;
             text-align:end;
             align-items: center;
+            &:hover{
+                @include seleccionar
+            }
             @include mediaQueryTablet{
                 width: 300px;
                 height: auto;
