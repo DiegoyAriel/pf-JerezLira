@@ -1,29 +1,36 @@
-
 .formulario{
     color: black;
     background-image: url(../../images/contact/portada.jpg);
-    height: 1000px;
+    height: 1250px;
     width: 100%;
     background-size: cover;
-    .separador{
-        width: 100%;
-        margin: 0;
-        height: 25px;
-        background-color: $color-primario;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include mediaQueryTablet{
+        height: fit-content;
     }
     form{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 50%;
         text-align: center;
         align-items: center;
-        margin-top: 10px;
+        padding-top: 10px;
+        margin: 20px 0;
+        border-radius: 8px;
         flex-wrap: wrap;
+        background-color: $color-terciario;
+        @include mediaQueryTablet{
+            width: 70vh;
+        
+        }
     }
     .preguntas{
         background-color: $color-terciario;
         width: fit-content;
         margin: 10px;
+        width: 50%;
         font-size: $desktop-texto;
         padding: 5px;
         border-radius: 8px;
@@ -32,9 +39,11 @@
         @include mediaQueryTablet{
             font-size: $mobile-texto;
         }
+        @include mediaQueryMobile{
+            font-size: $mobile-texto - 4px;
+        }
     }
     p{
-        background-color: $color-terciario;
         width: fit-content;
         margin: 10px;
         font-size: $desktop-texto;
@@ -42,6 +51,9 @@
         border-radius: 8px;
         @include mediaQueryTablet{
             font-size: $mobile-texto;
+        }
+        @include mediaQueryMobile{
+            font-size: $mobile-texto - 4px;
         }
     }
     .opciones{
@@ -58,22 +70,13 @@
         align-items: center;
         @include mediaQueryTablet{
             font-size: $mobile-texto;
+            flex-direction: column;
+        }
+        @include mediaQueryMobile{
+            font-size: $mobile-texto - 4px;
         }
     }
     label{
         padding: 5px;
     }
-}
-
-.preguntas{
-    font-size: 12px;
-}
-form p{
-    font-size: 10px;
-}
-.opciones{
-    font-size: 10px;
-}
-.area{
-    width: 70%;
 }

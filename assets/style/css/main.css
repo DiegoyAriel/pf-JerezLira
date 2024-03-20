@@ -16,7 +16,7 @@
   background-color: black;
   padding: 20px 0px 20px 20px;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
   color: white;
   margin-left: 40px;
@@ -24,23 +24,23 @@
 .wp img {
   height: 80px;
 }
-@media (max-width: 492px) {
+@media (max-width: 480px) {
   .wp img {
     height: 50px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .wp {
-    font-size: 16px;
+    font-size: 18px;
     padding: 15px 0px 15px 15px;
   }
   .wp img {
     height: 60;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 480px) {
   .wp {
-    font-size: 12px;
+    font-size: 16px;
     padding: 12px 0px 12px 12px;
   }
   .wp img {
@@ -65,7 +65,7 @@
   margin-left: 15px;
   font-size: 40px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .navbar .header .logo {
     display: block;
   }
@@ -102,7 +102,7 @@
   color: black;
   transition: all 0.5 ease;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .navbar .header .pages .inicio {
     display: none;
   }
@@ -129,7 +129,7 @@ footer p {
 footer img {
   height: 60px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   footer div {
     flex-direction: column;
     align-items: center;
@@ -138,20 +138,10 @@ footer img {
 
 #hero {
   background-image: url(../../images/index/hero.jpeg);
-  height: 800px;
+  height: 89vh;
   width: 100%;
   background-size: cover;
   background-position: center;
-}
-@media (max-width: 991px) {
-  #hero {
-    height: 950px;
-  }
-}
-@media (max-width: 492px) {
-  #hero {
-    height: 680px;
-  }
 }
 #hero h1 {
   color: white;
@@ -163,12 +153,12 @@ footer img {
   animation-name: aparecer;
   animation-iteration-count: 1;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #hero h1 {
     font-size: 30px;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 480px) {
   #hero h1 {
     font-size: 30px;
     padding-top: 100px;
@@ -176,25 +166,25 @@ footer img {
 }
 #hero p {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   font-style: italic;
   padding-left: 20px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #hero p {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 480px) {
   #hero p {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
 #about {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 470px auto;
+  grid-template-rows: 100vh auto;
   grid-template-areas: "banner banner" "personal1 personal2";
 }
 #about #banner {
@@ -211,50 +201,50 @@ footer img {
   margin: 40px;
   border-radius: 8px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #about .personal1 img {
     height: 250px;
     width: 230px;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 480px) {
   #about .personal1 img {
     height: 220px;
     width: 200px;
   }
 }
 #about .personal1 p {
-  font-size: 16px;
+  font-size: 20px;
   margin-right: 20px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #about .personal1 p {
-    font-size: 16px;
+    font-size: 18px;
     margin: 20px;
     text-align: justify;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 480px) {
   #about .personal1 p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 #about .personal1 h2 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bolder;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #about .personal1 h2 {
     margin-left: 20px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  #about .personal1 h2 {
     font-size: 18px;
   }
 }
-@media (max-width: 492px) {
-  #about .personal1 h2 {
-    font-size: 14px;
-  }
-}
-@media (max-width: 492px) {
+@media (max-width: 480px) {
   #about .personal1 {
     flex-direction: column;
     align-items: center;
@@ -262,28 +252,28 @@ footer img {
 }
 #about .personal2 {
   grid-area: personal2;
-  background-color: #d9bcda;
+  background-color: rgba(217, 188, 218, 0.5);
 }
 #about .personal2 p {
   text-align: center;
   margin-top: 40px;
-  font-size: 16px;
+  font-size: 20px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #about .personal2 p {
     margin: 20px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  #about .personal2 p {
     font-size: 16px;
   }
 }
-@media (max-width: 492px) {
-  #about .personal2 p {
-    font-size: 12px;
-  }
-}
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #about {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 100vh auto auto;
     grid-template-areas: "banner" "personal1" "personal2";
   }
 }
@@ -293,52 +283,52 @@ footer img {
   background-position: center;
   grid-area: banner;
   background-size: cover;
-  height: auto;
+  height: 100vh;
   padding: 100px 20px 20px 20px;
 }
 #banner h1 {
-  color: white;
+  color: black;
   font-size: 70px;
   font-weight: bolder;
   animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: 1;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #banner h1 {
     font-size: 40px;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 480px) {
   #banner h1 {
     font-size: 30px;
   }
 }
 #banner p {
   color: black;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   padding: 0 20px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
+  #banner p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
   #banner p {
     font-size: 18px;
   }
 }
-@media (max-width: 492px) {
-  #banner p {
-    font-size: 14px;
-  }
-}
 #banner .disclaimer {
-  font-size: 16px;
+  font-size: 20px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #banner .disclaimer {
-    font-size: 16px;
+    font-size: 18px -4px;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 480px) {
   #banner .disclaimer {
     font-size: 12px;
   }
@@ -347,59 +337,79 @@ footer img {
 .formulario {
   color: black;
   background-image: url(../../images/contact/portada.jpg);
-  height: 1000px;
+  height: 1250px;
   width: 100%;
   background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.formulario .separador {
-  width: 100%;
-  margin: 0;
-  height: 25px;
-  background-color: black;
+@media (max-width: 1023px) {
+  .formulario {
+    height: fit-content;
+  }
 }
 .formulario form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
   text-align: center;
   align-items: center;
-  margin-top: 10px;
+  padding-top: 10px;
+  margin: 20px 0;
+  border-radius: 8px;
   flex-wrap: wrap;
+  background-color: rgba(217, 188, 218, 0.5);
+}
+@media (max-width: 1023px) {
+  .formulario form {
+    width: 70vh;
+  }
 }
 .formulario .preguntas {
-  background-color: #d9bcda;
+  background-color: rgba(217, 188, 218, 0.5);
   width: fit-content;
   margin: 10px;
-  font-size: 16px;
+  width: 50%;
+  font-size: 20px;
   padding: 5px;
   border-radius: 8px;
   display: flex;
   flex-direction: row;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
+  .formulario .preguntas {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
   .formulario .preguntas {
     font-size: 12px;
   }
 }
 .formulario p {
-  background-color: #d9bcda;
   width: fit-content;
   margin: 10px;
-  font-size: 16px;
+  font-size: 20px;
   padding: 5px;
   border-radius: 8px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
+  .formulario p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
   .formulario p {
     font-size: 12px;
   }
 }
 .formulario .opciones {
-  background-color: #d9bcda;
+  background-color: rgba(217, 188, 218, 0.5);
   width: fit-content;
   text-align: justify;
   margin: 10px;
-  font-size: 16px;
+  font-size: 20px;
   padding: 5px;
   border-radius: 8px;
   display: flex;
@@ -407,7 +417,13 @@ footer img {
   flex-direction: row;
   align-items: center;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
+  .formulario .opciones {
+    font-size: 16px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
   .formulario .opciones {
     font-size: 12px;
   }
@@ -416,26 +432,10 @@ footer img {
   padding: 5px;
 }
 
-.preguntas {
-  font-size: 12px;
-}
-
-form p {
-  font-size: 10px;
-}
-
-.opciones {
-  font-size: 10px;
-}
-
-.area {
-  width: 70%;
-}
-
 .redes {
   display: flex;
   flex-flow: row wrap;
-  background-color: #d9bcda;
+  background-color: rgba(217, 188, 218, 0.5);
   justify-content: space-evenly;
 }
 .redes .enlaces {
@@ -447,18 +447,18 @@ form p {
   height: max-content;
 }
 .redes .enlaces p {
-  font-size: 16px;
+  font-size: 20px;
   margin: 20px 40px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .redes .enlaces p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 480px) {
   .redes .enlaces p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 .redes .enlaces .fotoPersonal {
@@ -466,14 +466,14 @@ form p {
   width: 350px;
   margin: 40px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .redes .enlaces .fotoPersonal {
     height: 300px;
     width: 250px;
     margin: 20px;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 480px) {
   .redes .enlaces .fotoPersonal {
     height: 250px;
     width: 200px;
@@ -484,12 +484,12 @@ form p {
   height: 100px;
   background-color: black;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .redes .enlaces .ig {
     height: 60px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .redes .enlaces {
     width: 100%;
   }
@@ -498,7 +498,7 @@ form p {
   height: 350px;
   margin: 0 30px 50px 30px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .redes iframe {
     height: 200px;
     width: 400px;
@@ -509,10 +509,10 @@ form p {
 #services {
   display: grid;
   grid-template-columns: 175px auto;
-  grid-template-rows: 500px auto auto auto;
+  grid-template-rows: 100vh auto auto auto;
   grid-template-areas: "banner banner" "menu cortes" "menu color" "menu tratamientos";
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #services {
     grid-template-columns: auto;
     grid-template-rows: 500px auto auto auto;
@@ -533,7 +533,7 @@ form p {
   bottom: 2px;
   padding: 10px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #services #menuNavegacion {
     display: none;
   }
@@ -555,16 +555,17 @@ form p {
   background-color: white;
   padding: 10px;
   width: 500px;
-  height: 170px;
+  height: auto;
   margin: 40px 60px 40px 20px;
   text-align: justify;
   align-items: center;
+  transition: all 1s ease;
 }
 #services #cortes .cortes:hover {
   transform: scale(1.2, 1.2);
   transition: all 1s ease;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #services #cortes .cortes {
     width: 300px;
     height: auto;
@@ -574,34 +575,34 @@ form p {
   }
 }
 #services #cortes .cortes p {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #services #cortes .cortes p {
-    font-size: 16px;
-    text-align: center;
-  }
-}
-@media (max-width: 492px) {
-  #services #cortes .cortes p {
-    font-size: 12px;
-  }
-}
-#services #cortes .cortes h2 {
-  font-size: 20px;
-  font-weight: bolder;
-  font-style: italic;
-}
-@media (max-width: 991px) {
-  #services #cortes .cortes h2 {
     font-size: 18px;
     text-align: center;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 480px) {
+  #services #cortes .cortes p {
+    font-size: 16px;
+  }
+}
+#services #cortes .cortes h2 {
+  font-size: 22px;
+  font-weight: bolder;
+  font-style: italic;
+}
+@media (max-width: 1023px) {
   #services #cortes .cortes h2 {
-    font-size: 14px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  #services #cortes .cortes h2 {
+    font-size: 18px;
   }
 }
 #services #cortes .cortes img {
@@ -612,7 +613,7 @@ form p {
   top: 10px;
   left: 50px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #services #cortes .cortes img {
     height: 130px;
     width: 120px;
@@ -631,19 +632,20 @@ form p {
 }
 #services #color .color {
   color: #740441;
-  background-color: #d9bcda;
+  background-color: rgba(217, 188, 218, 0.5);
   padding: 10px;
   width: 500px;
-  height: 170px;
+  height: auto;
   margin: 40px 60px 40px 20px;
-  text-align: end;
-  align-items: center;
+  text-align: center;
+  align-items: baseline;
+  transition: all 1s ease;
 }
 #services #color .color:hover {
   transform: scale(1.2, 1.2);
   transition: all 1s ease;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #services #color .color {
     width: 300px;
     height: auto;
@@ -654,34 +656,34 @@ form p {
   }
 }
 #services #color .color p {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #services #color .color p {
-    font-size: 16px;
-    text-align: center;
-  }
-}
-@media (max-width: 492px) {
-  #services #color .color p {
-    font-size: 12px;
-  }
-}
-#services #color .color h2 {
-  font-size: 20px;
-  font-style: italic;
-  font-weight: bolder;
-}
-@media (max-width: 991px) {
-  #services #color .color h2 {
     font-size: 18px;
     text-align: center;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 480px) {
+  #services #color .color p {
+    font-size: 16px;
+  }
+}
+#services #color .color h2 {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bolder;
+}
+@media (max-width: 1023px) {
   #services #color .color h2 {
-    font-size: 14px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  #services #color .color h2 {
+    font-size: 18px;
   }
 }
 #services #color .color img {
@@ -692,7 +694,7 @@ form p {
   bottom: 70px;
   right: 20px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #services #color .color img {
     height: 130px;
     width: 120px;
@@ -713,16 +715,17 @@ form p {
   background-color: black;
   padding: 10px;
   width: 500px;
-  height: 180px;
+  height: auto;
   margin: 40px 60px 40px 20px;
   text-align: end;
   align-items: center;
+  transition: all 1s ease;
 }
 #services #tratamientos .tratamientos:hover {
   transform: scale(1.2, 1.2);
   transition: all 1s ease;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #services #tratamientos .tratamientos {
     width: 300px;
     height: auto;
@@ -733,34 +736,34 @@ form p {
   }
 }
 #services #tratamientos .tratamientos p {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #services #tratamientos .tratamientos p {
-    font-size: 16px;
-    text-align: center;
-  }
-}
-@media (max-width: 492px) {
-  #services #tratamientos .tratamientos p {
-    font-size: 12px;
-  }
-}
-#services #tratamientos .tratamientos h2 {
-  font-size: 20px;
-  font-style: italic;
-  font-weight: bolder;
-}
-@media (max-width: 991px) {
-  #services #tratamientos .tratamientos h2 {
     font-size: 18px;
     text-align: center;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 480px) {
+  #services #tratamientos .tratamientos p {
+    font-size: 16px;
+  }
+}
+#services #tratamientos .tratamientos h2 {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bolder;
+}
+@media (max-width: 1023px) {
   #services #tratamientos .tratamientos h2 {
-    font-size: 14px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  #services #tratamientos .tratamientos h2 {
+    font-size: 18px;
   }
 }
 #services #tratamientos .tratamientos img {
@@ -771,7 +774,7 @@ form p {
   bottom: 60px;
   left: 50px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   #services #tratamientos .tratamientos img {
     height: 130px;
     width: 120px;

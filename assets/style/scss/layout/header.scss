@@ -6,56 +6,55 @@
         position: fixed;
         z-index: 100000;
         top: 0;
-    .logo{
-        color:$color-secundario;
-        display: none;
-        font-family: "Sacramento", sans-serif;
-        margin-left: 15px;
-        font-size: 40px;
-        @include mediaQueryTablet{
-            display: block;
-        }
-        &:hover{
-            background-color: $color-secundario;
-            color: $color-primario;
-        }
-
-    }
-    .pages{
-        display:flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-      .page{
-            color: $color-secundario;
-            font-size: 20px;
-            font-weight: lighter;
-            padding: 26px;
-            &:hover{
-                background-color: $color-secundario;
-                color: $color-primario;
-                transition: all 0.5 ease;
-            }
-        }
-        .inicio{
-            color: $color-secundario;
-            font-size: 40px;
+        .logo{
+            color:$color-secundario;
+            display: none;
             font-family: "Sacramento", sans-serif;
-            padding: 12px;
+            margin-left: 15px;
+            font-size: 40px;
+            @include mediaQueryTablet{
+                display: block;
+            }
             &:hover{
                 background-color: $color-secundario;
                 color: $color-primario;
-                transition: all 0.5 ease;
-            }
-            @include mediaQueryTablet{
-                display:none;
             }
         }
-        .current{
-            font-weight: bolder;
+        .pages{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        .page{
+                color: $color-secundario;
+                font-size: 20px;
+                font-weight: lighter;
+                padding: 26px;
+                &:hover{
+                    background-color: $color-secundario;
+                    color: $color-primario;
+                    transition: all 0.5 ease;
+                }
+            }
+            .inicio{
+                color: $color-secundario;
+                font-size: 40px;
+                font-family: "Sacramento", sans-serif;
+                padding: 12px;
+                &:hover{
+                    background-color: $color-secundario;
+                    color: $color-primario;
+                    transition: all 0.5 ease;
+                }
+                @include mediaQueryTablet{
+                    display:none;
+                }
+            }
+            .current{
+                font-weight: bolder;
+            }
         }
     }
-}
 }
 
 

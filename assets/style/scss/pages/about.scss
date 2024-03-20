@@ -1,8 +1,7 @@
-
 #about{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 470px auto;
+    grid-template-rows: 100vh auto;
     grid-template-areas: 
     "banner banner"
     "personal1 personal2";
@@ -73,7 +72,7 @@
     }
     @include mediaQueryTablet{
             grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto;
+            grid-template-rows: 100vh auto auto;
             grid-template-areas: 
             "banner"
             "personal1"
@@ -86,10 +85,10 @@
     background-position: center;
     grid-area: banner;
     background-size: cover;
-    height: auto;
+    height: 100vh;
     padding: 100px 20px 20px 20px;
     h1 {
-        color: $color-secundario;
+        color: $color-primario;
         font-size: $desktop-titulo;
         font-weight: bolder;
         @include aparecer;
@@ -115,10 +114,10 @@
     .disclaimer {
         font-size: $desktop-texto;
         @include mediaQueryTablet{
-            font-size: $tablet-texto
+            font-size: $tablet-texto -4px;
         }
         @include mediaQueryMobile{
-            font-size: $mobile-texto;
+            font-size: $mobile-texto - 4px;
         }
     }
 }

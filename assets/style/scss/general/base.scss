@@ -1,34 +1,31 @@
 // Colores //
 $color-primario: black;
 $color-secundario: white;
-$color-terciario: #d9bcda;
+$color-terciario: rgba(217, 188, 218, 0.5);
 $color-cuarto: linear-gradient(167deg, rgba(216,231,238,1) 0%, rgba(137,137,171,1) 53%, rgba(255,218,235,1) 100%);
 $color-quinto: #740441;
 $color-sexto: #fcf8f2;
-
 // tamaños de letra//
 $desktop-titulo: 70px;
-$desktop-subtitulo: 20px;
-$desktop-texto:16px;
+$desktop-subtitulo: 22px;
+$desktop-texto:20px;
 $tablet-titulo:40px;
-$tablet-subtitulo:18px;
-$tablet-texto:16px;
+$tablet-subtitulo:20px;
+$tablet-texto:18px;
 $mobile-titulo: 30px;
-$mobile-subtitulo: 14px;
-$mobile-texto:12px;
-
+$mobile-subtitulo: 18px;
+$mobile-texto:16px;
 //mixins//
 @mixin mediaQueryMobile{
-    @media (max-width: 492px){
+    @media (max-width: 480px){
         @content;
     }
 }
 @mixin mediaQueryTablet{
-    @media (max-width:991px){
+    @media (max-width:1023px){
         @content;    
     }
 }
-
 //animaciones //
 @mixin aparecer{
     animation-duration: 2s;

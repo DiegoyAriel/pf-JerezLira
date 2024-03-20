@@ -1,7 +1,7 @@
 #services {
     display: grid;
     grid-template-columns: 175px auto;
-    grid-template-rows: 500px auto auto auto;
+    grid-template-rows: 100vh auto auto auto;
     grid-template-areas:
         "banner banner"
         "menu cortes"
@@ -48,10 +48,11 @@
             background-color: $color-secundario;
             padding: 10px;
             width: 500px;
-            height: 170px;
+            height: auto;
             margin: 40px 60px 40px 20px;
             text-align: justify;
             align-items: center;
+            transition: all 1s ease;
             &:hover{
                 @include seleccionar
             }
@@ -114,10 +115,11 @@
             background-color: $color-terciario;
             padding: 10px;
             width: 500px;
-            height: 170px;
+            height: auto;
             margin: 40px 60px 40px 20px;
-            text-align:end;
-            align-items: center;
+            text-align:center;
+            align-items: baseline;
+            transition: all 1s ease;
             &:hover{
                 @include seleccionar
             }
@@ -180,10 +182,11 @@
             background-color: $color-primario;
             padding: 10px;
             width: 500px;
-            height: 180px;
+            height: auto;
             margin: 40px 60px 40px 20px;
             text-align:end;
             align-items: center;
+            transition: all 1s ease;
             &:hover{
                 @include seleccionar
             }

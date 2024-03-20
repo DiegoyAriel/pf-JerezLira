@@ -1,15 +1,9 @@
 #hero {
     background-image: url(../../images/index/hero.jpeg);
-    height: 800px;
+    height: 100vh - 11vh;
     width: 100%;
     background-size: cover;
     background-position: center;
-    @include mediaQueryTablet{
-        height: 950px;
-    }
-    @include mediaQueryMobile{
-        height: 680px;
-    }
     h1 {
         color: $color-secundario;
         font-size: $desktop-titulo;
