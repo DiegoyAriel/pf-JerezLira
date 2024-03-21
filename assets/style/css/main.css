@@ -515,7 +515,7 @@ footer img {
 @media (max-width: 1023px) {
   #services {
     grid-template-columns: auto;
-    grid-template-rows: 500px auto auto auto;
+    grid-template-rows: 700px auto auto auto;
     grid-template-areas: "banner" "cortes" "color" "tratamientos";
   }
 }
